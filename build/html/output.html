@@ -1,43 +1,69 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Output &#8212; funwave  documentation</title>
-    
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <title>Output &#8212; FUNWAVE Documentation</title>
+    <link rel="stylesheet" href="_static/lglb-sphinx-doc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Spherical Coordinates" href="spherical.html" />
-    <link rel="prev" title="Post Processing" href="post.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="prev" title="Post Processing" href="post.html" /> 
+  </head><body>
+<div class="header">
+ <p class="logo"><a href="https://fengyanshi.github.io/build/html/index.html">
+  <img class="logo" src="_static/../../../images/Funwave.svg" alt="Logo"/>
+ </a></p>
+</div>
 
-  </head>
-  <body role="document">
-  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="spherical.html" title="Spherical Coordinates"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="post.html" title="Post Processing"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">FUNWAVE Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="definition.html" ><strong>DEFINITIONS OF PARAMETERS</strong></a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="central_para.html" accesskey="U">Parameters for Central Module</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="post.html"
+                        title="previous chapter">Post Processing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="spherical.html"
+                        title="next chapter">Spherical Coordinates</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
 
     <div class="document">
       <div class="documentwrapper">
@@ -55,11 +81,11 @@
 <p><strong>SPECIFICATION OF OUTPUT VARIABLES</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>NumberStations: number of station for output. If NumberStations <span class="math">\(&gt; 0\)</span>, need input i,j in STATION_FILE</li>
+<li>NumberStations: number of station for output. If NumberStations <span class="math notranslate nohighlight">\(&gt; 0\)</span>, need input i,j in STATION_FILE</li>
 <li>DEPTH_OUT: logical parameter for output depth. T or F.</li>
 <li>U: logical parameter for output u. T or F.</li>
 <li>V: logical parameter for output v. T or F.</li>
-<li>ETA: logical parameter for output <span class="math">\(\eta\)</span>. T or F.</li>
+<li>ETA: logical parameter for output <span class="math notranslate nohighlight">\(\eta\)</span>. T or F.</li>
 <li>MASK: logical parameter for output wetting-drying MASK. T or F.</li>
 <li>MASK9: logical parameter for output MASK9 (switch for Boussinesq/NSWE). T or F.</li>
 <li>SourceX: logical parameter for output source terms in x direction. T or F.</li>
@@ -86,7 +112,7 @@
 <p>The output files are saved in the result directory defined by RESULT_FOLDER in input.txt.</p>
 <blockquote>
 <div><em>Output file names</em></div></blockquote>
-<p>A file name is a combination of variable name and an output series number such as eta_00001, eta_00002, .... The format  and read/write algorithm are  consistent with a depth file.</p>
+<p>A file name is a combination of variable name and an output series number such as eta_00001, eta_00002, …. The format  and read/write algorithm are  consistent with a depth file.</p>
 <blockquote>
 <div><blockquote>
 <div><strong>CENTRAL module</strong></div></blockquote>
@@ -104,7 +130,7 @@
 <li>p_xxxxx: volume flux in the x direction</li>
 <li>q_xxxxx: volume flux in the y direction</li>
 <li>nubrk_xxxxx: breaking induced eddy vviscosity (when viscosity breaker is on)</li>
-<li>etat_xxxxx: <span class="math">\(\eta_t\)</span></li>
+<li>etat_xxxxx: <span class="math notranslate nohighlight">\(\eta_t\)</span></li>
 <li>age_xxxxx: breaking age (in seconds)</li>
 <li>roller_xxxxx: roller-induced mass flux</li>
 <li>U_undertow_xxxxx: roller-induced extra undertow flux in the x direction</li>
@@ -137,7 +163,7 @@
 </ul>
 <p><em>Station files</em></p>
 </div></blockquote>
-<p>Output for stations is a series of numbered files such as sta_0001, sta_0002 .... (NOTE: four digit numbers here vs. five digit numbers for 2D output like eta_00001).</p>
+<p>Output for stations is a series of numbered files such as sta_0001, sta_0002 …. (NOTE: four digit numbers here vs. five digit numbers for 2D output like eta_00001).</p>
 <blockquote>
 <div><ul class="simple">
 <li>ASCII format</li>
@@ -150,9 +176,9 @@
 <li>BINARY format</li>
 </ul>
 </div></blockquote>
-<p>When FIELD_IO_TYPE = BINARY is specified in input.txt, the 2D output files such as eta_00001, ... are in the binary format. Here&#8217;s an example of reading in matlab:</p>
-<p>&gt;&gt;fileID=fopen(&#8216;eta_00001&#8217;);</p>
-<p>&gt;&gt;eta=fread(fileID,[Mglob Nglob],&#8217;*double&#8217;);</p>
+<p>When FIELD_IO_TYPE = BINARY is specified in input.txt, the 2D output files such as eta_00001, … are in the binary format. Here’s an example of reading in matlab:</p>
+<p>&gt;&gt;fileID=fopen(‘eta_00001’);</p>
+<p>&gt;&gt;eta=fread(fileID,[Mglob Nglob],’*double’);</p>
 <p>&gt;&gt;fclose(fileID);</p>
 <p>&gt;&gt;pcolor(eta),shading flat</p>
 <p>Station files do not have Binary format.</p>
@@ -168,45 +194,28 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="definition.html"><strong>DEFINITIONS OF PARAMETERS</strong></a><ul>
-  <li><a href="central_para.html">Parameters for Central Module</a><ul>
-      <li>Previous: <a href="post.html" title="previous chapter">Post Processing</a></li>
-      <li>Next: <a href="spherical.html" title="next chapter">Spherical Coordinates</a></li>
-  </ul></li>
-  </ul></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2017, Fengyan Shi.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="spherical.html" title="Spherical Coordinates"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="post.html" title="Post Processing"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">FUNWAVE Documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="definition.html" ><strong>DEFINITIONS OF PARAMETERS</strong></a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="central_para.html" >Parameters for Central Module</a> &#187;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fengyan Shi.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
   </body>
 </html>
