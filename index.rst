@@ -13,7 +13,8 @@ FUNWAVE-TVD
 .. important::
    There will be a FUNWAVE Workshop from 18-20 October 2019 held at Hohai University, Nanjing, China.
    For more info, visit :ref:`workshop_2019-label`.
- 
+
+************************** 
 
 What is FUNWAVE?
 *******************
@@ -76,7 +77,7 @@ Applications
 Transition to HPC-Portal
 ************************
 
-In 2019, USACE and the greater DoD will be capable of running FUNWAVE remotely on hundreds and/or thousands of cores/processors in a Graphical User Interface (GUI) environment using a web browser! Learn more about the :ref:`benefits` of transitioning.
+In 2019, USACE and the greater DoD will be capable of running FUNWAVE remotely on hundreds and/or thousands of cores/processors in a Graphical User Interface (GUI) environment using a web browser! Learn more about the :ref:`benefits <section-benefits>` of transitioning.
 
 .. image:: images/hpcportal.jpg
    :width: 700px
